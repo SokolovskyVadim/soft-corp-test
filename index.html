@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>soft-corp-test</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
 </head>
-
-<body>
-
-    
+<body>   
     <header class="header">
         <div class="container header__row">
             <div class="logo logo_theme_lorem">
@@ -22,27 +20,30 @@
                     .Net
                 </span>
             </div>
+            <div class="burger_wraper">
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
             <ul class="header-menu menu">
                 <li class="header-menu__item">
-                    <a class="header-menu__link" href="">Бизнес</a>
+                    <a class="header-menu__link" href="#!">Бизнес</a>
                 </li>
                 <li class="header-menu__item">
-                    <a class="header-menu__link" href="">О нас</a>
+                    <a class="header-menu__link" href="#!">О нас</a>
                 </li>
                 <li class="header-menu__item">
-                    <a class="header-menu__link" href="">Цены</a>
+                    <a class="header-menu__link" href="#!">Цены</a>
                 </li>
                 <li class="header-menu__item">
-                    <a class="header-menu__link" href="">Оформить заказ</a>
+                    <a class="header-menu__link" href="#!">Оформить заказ</a>
                 </li>
             </ul>
         </div>
     </header>
-
     <main>
         <section class="main-screen">
             <div class="container">
-
                 <div class="main-screen__title">
                     <span class="main_screen_blue">
                         Lorem ipsum
@@ -54,13 +55,10 @@
                         adipiscing
                     </span>
                 </div>
-
                 <div class="main-screen__info">
-
                     <div class="main-screen__text">
                         At vero eos et accusamus et iusto odio dignissimos ducimus!
                     </div>
-
                     <ul class="main-screen-list">
                         <li class="main-screen-list__item">
                             - Totam rem aperiam eaque ipsa
@@ -72,7 +70,6 @@
                             - Sed ut perspiciatis, unde omnis iste natus error
                         </li>
                     </ul>
-
                     <div class="header-bts-row">
                         <div class="btn btn-blue">
                             заказать
@@ -81,14 +78,11 @@
                             подробнее
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <section class="сheckout">
             <div class="container сheckout__block">
-
                 <div class="сheckout__title">
                     <span class="сheckout_white_text">
                         Оформление 
@@ -97,69 +91,132 @@
                         Заказа
                     </span>
                 </div>
-
                 <div class="сheckout__subtitle">
                     Перед заполнением формы ознакомьтесь с нашей схемой работы!
                 </div>
-
                 <div class="сheckout-items__row">
-
                     <div class="сheckout__item сheckout-items__item">
                         <div class="сheckout__img сheckout_img_dot">
-                            <img class="сheckout-items__img" src="img/search.png" alt="">
+                            <img class="сheckout-items__img" src="img/search.png" alt="search">
                         </div>
                         <div class="сheckout-items__text">
                             Lorem ipsum dolor sit amet
                         </div>
                     </div>
-
                     <div class="сheckout__item сheckout-items__item">
                         <div class="сheckout__img сheckout_img_dot">
-                            <img class="сheckout-items__img" src="img/percent.png" alt="">
+                            <img class="сheckout-items__img" src="img/percent.png" alt="percent">
                         </div>
                         <div class="сheckout-items__text">
                             Сonsecteturadipiscing elit
                         </div>
                     </div>
-
                     <div class="сheckout__item сheckout-items__item">
                         <div class="сheckout__img сheckout_img_dot">
-                            <img class="сheckout-items__img" src="img/subtract.png" alt="">
+                            <img class="сheckout-items__img" src="img/subtract.png" alt="subtract">
                         </div>
                         <div class="сheckout-items__text">
                             Sed do eiusmod tempor
                         </div>
                     </div>
-
                     <div class="сheckout__item сheckout-items__item">
                         <div class="сheckout__img сheckout_img_dot">
-                            <img class="сheckout-items__img" src="img/mail.png" alt="">
+                            <img class="сheckout-items__img" src="img/mail.png" alt="email">
                         </div>
                         <div class="сheckout-items__text">
                             Esse cillum dolore eu fugiat
                         </div>
-                    </div>
-                    
+                    </div>                
                     <div class="сheckout__item сheckout-items__item">
                         <div class="сheckout__img">
-                            <img class="сheckout-items__img" src="img/dollar.png" alt="">
+                            <img class="сheckout-items__img" src="img/dollar.png" alt="dollar">
                         </div>
                         <div class="сheckout-items__text">
                             Excepteur sint occaecat cupidatat non proident
                         </div>
                     </div>
-
                 </div>
-
+                <form action="" class="сheckout-form">
+                    <div class="select">
+                        <div class="selectWrapper">
+                            <div class="selectCustom js-selectCustom">
+                            <div class="selectCustom-trigger">Выберите тип системы</div>
+                            <div class="selectCustom-options" id="select-items">
+                                <div class="selectCustom-option" data-value="ds">Sed ut perspiciatis</div>
+                                <div class="selectCustom-option" data-value="fe">Nemo enim ipsam</div>
+                                <div class="selectCustom-option" data-value="be">Et harum quidem</div>
+                                <div class="selectCustom-option" data-value="qa">Temporibus autem</div>
+                                <div class="selectCustom-option" data-value="un">Itaque earum rerum</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="email" placeholder="Ваш e-mail" class="сheckout-form__input">
+                    <input type="text" placeholder="Ваше имя" class="сheckout-form__input">                 
+                    <div class="range-slider">
+                        <div class="range-slider__info">
+                            <div class="range-slider__text">
+                                Sed ut perspiciatis, unde omnis iste natus
+                            </div>
+                            <div class="range-slider__percent" id="demo"></div>
+                        </div>
+                        <input type="range" class="range" id="myRange">                    
+                    </div>
+                    <div class="upload-file">
+                        <label class="upload-file__input" for="upload-file">
+                            <img src="img/file.png" alt="file">
+                            Прикрепить файл
+                        </label>
+                        <input type="file" name="file" id="upload-file" />
+                    </div>
+                    <div class="submit-form">
+                        <button class="submit-form__btn btn btn-blue" type="submit" value="Submit">Отправить</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
-   
     <footer class="footer">
-
+        <div class="container footer__row">
+            <div class="footer__copyright">
+                © <span id="date"></span> «LOREMIPSUM.NET» Все права защищены.
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__contacts">
+                <a class="footer-contacts__item" href="p2p.qiwi.com." target="_blank">
+                    <img src="img/qiwi_wallet.png" alt="qiwi">
+                    <span>QIWI wallet</span>
+                </a>
+                <a class="footer-contacts__item" href="https://yoomoney.ru/quickpay/form?_openstat=iget%3Bshop%3Bicon&from=iget" target="_blank">
+                    <img src="img/yandex.png" alt="yandex">
+                    <span>Yandex Money</span>
+                </a>
+                <a class="footer-contacts__item" href="https://wiki.webmoney.ru/projects/webmoney/wiki/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%BB%D0%B0%D1%82%D1%91%D0%B6%D0%BD%D0%BE%D0%B9_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D0%B2_WebMoney_Keeper_Standard" target="_blank">
+                    <img src="img/сombined_shape.png" alt="сombined_shape">
+                    <span>Web Money</span>
+                </a>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__contacts">
+                <a class="footer-contacts__item" href="mailto:info@ipsum228.com" target="_blank">
+                    <img src="img/mail-b.png" alt="email">
+                    <span>info@ipsum228.com</span>
+                </a>
+                <a class="footer-contacts__item" href="vk.com" target="_blank">
+                    <img src="img/vk.png" alt="vk">
+                    <span>Мы вконтакте</span>
+                </a>
+            </div>
+        </div>
     </footer>
-
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script>
+        new SimpleBar(document.getElementById('select-items'));
+    </script>
+    
+    
+
 
 </body>
 
